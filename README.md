@@ -53,6 +53,8 @@ Once you know where it is located, you can then run the `generate_cert.go` tool 
 
 It then stores the private key in `key.pem` file and generates a self-signed TLS certificate for the host `localhost` containing the public key which it stores in a `cert.pem` file
 
+Note : if you want run using http you can change `ListenAndServeTLS()` with `ListenAndServe()` in ./cmd/web/main.go file
+
 ### 4.) Run
 
 Before running the project you should decide which port and what dsn (data source name) mysql first. Default value :
